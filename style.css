@@ -1,0 +1,47 @@
+body { 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    max-width: 600px; 
+    margin: auto; 
+}
+
+.match-card { 
+    border: 1px solid #ccc; 
+    padding: 15px; 
+    margin-bottom: 10px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    background: #f9f9f9; 
+}
+
+.match-card:hover { 
+    background: #eef; 
+}
+
+#form-modal { 
+    display: none; 
+    margin-top: 20px; 
+    padding: 20px; 
+    border: 2px solid #28a745; 
+    border-radius: 8px; 
+}
+
+input, select, button { 
+    width: 100%; 
+    padding: 10px; 
+    margin: 5px 0 15px 0; 
+    box-sizing: border-box; /* Ensures padding doesn't push width past 100% */
+}
+
+button { 
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #218838;
+}

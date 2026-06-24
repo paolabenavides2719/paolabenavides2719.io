@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYNJ World Cup Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🏆 NYNJ World Cup Predictor</h1>
+    <p>Click a match to submit your 1 entry!</p>
+
+    <div id="matches">
+        <div class="match-card" onclick="openForm('June 25 - Ecuador vs Germany')">📅 June 25, 4:00 PM ET: Ecuador vs. Germany</div>
+        <div class="match-card" onclick="openForm('June 27 - Panama vs England')">📅 June 27, 5:00 PM ET: Panama vs. England</div>
+        <div class="match-card" onclick="openForm('June 30 - Round of 32')">📅 June 30, 5:00 PM ET: Round of 32 (TBD)</div>
+        <div class="match-card" onclick="openForm('July 05 - Round of 16')">📅 July 05, 4:00 PM ET: Round of 16 (TBD)</div>
+        <div class="match-card" onclick="openForm('July 19 - World Cup Final')">📅 July 19, 3:00 PM ET: FIFA World Cup Final (TBD)</div>
+    </div>
+
+    <div id="form-modal">
+        <h2 id="match-title"></h2>
+        <form id="predictionForm">
+            <label>Your Name:</label>
+            <input type="text" id="playerName" required>
+
+            <label>Predicted Winner (or Tie):</label>
+            <input type="text" id="predictedWinner" placeholder="e.g., Germany, Tie" required>
+
+            <label>Predicted Score (e.g., 2-1):</label>
+            <input type="text" id="predictedScore" required>
+
+            <button type="submit">Submit Prediction</button>
+        </form>
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
